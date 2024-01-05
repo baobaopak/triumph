@@ -34,7 +34,7 @@
 </head>
 <body>
 
-<video autoplay muted loop>
+<video playsinline autoplay muted loop>
   <source src="https://dm0qx8t0i9gc9.cloudfront.net/previews/video/VCHXZQKsxil3lhgr4/videoblocks-usa-flag-fabric-texture-waving-in-the-wind_hamma2aau7__99857f6ba8edfce173bc1cb982ad0f50__P720.mp4"
           type="video/mp4">
   <!--    <source src="https://dm0qx8t0i9gc9.cloudfront.net/previews/video/bOFlXnz/videoblocks-p1500026_shf0sgswk__b965051a7b12b2ddf52426f64cb27de3__P720.mp4"-->
@@ -46,10 +46,21 @@
 <button onclick="claimNow()">Start Now</button>
 
 <script>
-  function claimNow() {
-    // Add your claim now functionality here
-    window.location.href = 'https://82423ak7w4uo4n7i00w3o52nzt.hop.clickbank.net/?tid=[cmc_vid]';
-  }
+  document.addEventListener('DOMContentLoaded', function() {
+    var video = document.querySelector('video');
+    video.addEventListener('click', function() {
+      if (video.paused) {
+        video.play();
+      } else {
+        video.pause();
+      }
+    });
+
+    function claimNow() {
+      // Add your claim now functionality here
+      window.location.href = 'https://82423ak7w4uo4n7i00w3o52nzt.hop.clickbank.net/?tid=[cmc_vid]';
+    }
+  });
 </script>
 
 </body>
