@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Looping Video with Button</title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      position: relative;
+    }
+
+    video {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+    }
+
+    button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 38px;
+      padding: 20px 40px;
+      background-color: blue;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<video autoplay muted loop>
+  <source src="https://dm0qx8t0i9gc9.cloudfront.net/previews/video/VCHXZQKsxil3lhgr4/videoblocks-usa-flag-fabric-texture-waving-in-the-wind_hamma2aau7__99857f6ba8edfce173bc1cb982ad0f50__P720.mp4"
+          type="video/mp4">
+  <!--    <source src="https://dm0qx8t0i9gc9.cloudfront.net/previews/video/bOFlXnz/videoblocks-p1500026_shf0sgswk__b965051a7b12b2ddf52426f64cb27de3__P720.mp4"-->
+  <!--            type="video/mp4">-->
+
+  Your browser does not support the video tag.
+</video>
+
+<button onclick="claimNow()">Start Now</button>
+
+<script>
+  function claimNow() {
+    // Add your claim now functionality here
+    window.location.href = 'https://82423ak7w4uo4n7i00w3o52nzt.hop.clickbank.net/?tid=[cmc_vid]';
+  }
+</script>
+
+</body>
+</html>
